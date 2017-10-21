@@ -24,6 +24,9 @@ coverage
 # nyc test coverage
 .nyc_output
 
+# bundles that should be bundled at compile time
+public/
+
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 

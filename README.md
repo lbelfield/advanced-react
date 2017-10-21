@@ -17,14 +17,14 @@ SET UP GIT FOR FIRST TIME:
 
 Run these commands:
 ```shell
-    git init    
-    gst    
-    git add .    
-    gst    
-    git commit -m "description"    
-    gst    
-    git remote add origin https://github.com/...
-    git push -u origin master
+git init    
+gst    
+git add .    
+gst    
+git commit -m "<description>"    
+gst    
+git remote add origin https://github.com/...
+git push -u origin master
 ```
 
 PUSHING CHANGES:
@@ -58,13 +58,19 @@ yarn add babel-cli
 yarn add babel-preset-env
 yarn add babel-preset-stage-2
 yarn add babel-preset-react
+
+yarn add react
+yarn add react-dom
+yarn add webpack
+yarn add babel-loader (for webpack rules)
+yarn add babel-polyfill (for webpack for es6's asyncFunc())
 ```
 
 ******************************************************************************************************************************
 # Babel
 ******************************************************************************************************************************
 
-In package.json, can use imports in js (ES6) because of the babel preset.
+In package.json, can use imports in Node.js (ES6) because of the babel preset.
 
 ```shell
 "babel": {
