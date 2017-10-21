@@ -11,6 +11,8 @@
     "kill-dev": "pm2 kill",
     "lint": "eslint --ext .js,.jsx src lib views",
     "lint:fix": "eslint --fix --ext .js,.jsx src lib",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "webpack": "webpack -wd"
   },
   "babel": {
@@ -23,7 +25,8 @@
   "devDependencies": {
     "babel-eslint": "^8.0.1",
     "eslint": "^4.9.0",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
