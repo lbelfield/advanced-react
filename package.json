@@ -9,6 +9,8 @@
     "dev": "pm2 start lib/server.js --watch --interpreter babel-node",
     "logs": "pm2 logs",
     "kill-dev": "pm2 kill",
+    "lint": "eslint --ext .js,.jsx src lib views",
+    "lint:fix": "eslint --fix --ext .js,.jsx src lib",
     "webpack": "webpack -wd"
   },
   "babel": {
