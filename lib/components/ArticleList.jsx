@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Article from './Article';
 
@@ -17,3 +18,8 @@ const ArticleList = (props) => {
 };
 
 export default ArticleList;
+
+ArticleList.propTypes = {
+  articles: PropTypes.articles,
+  authors: PropTypes.authors
+};
