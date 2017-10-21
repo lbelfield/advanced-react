@@ -64,6 +64,8 @@ yarn add react-dom
 yarn add webpack
 yarn add babel-loader (for webpack rules)
 yarn add babel-polyfill (for webpack for es6's asyncFunc())
+
+yarn add --dev jest
 ```
 
 ******************************************************************************************************************************
