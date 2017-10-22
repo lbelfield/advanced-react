@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Article = (props) => {
-  const { article, author } = props;
+
+  const { article, lookupAuthor } = props;
+  
+  const author = lookupAuthor(article.authorId);
 
   return (
     <div>
@@ -16,9 +19,9 @@ const Article = (props) => {
   );
 };
 
-export default Article;
-
 Article.propTypes = {
-  article: PropTypes.article,
-  author: PropTypes.author
+  article: PropTypes.object,
+  lookupAuthor: PropTypes.func
 };
+
+export default Article;

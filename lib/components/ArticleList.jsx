@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 
 import Article from './Article';
 
-const ArticleList = (props) => {
+const ArticleList = ({articles, lookupAuthor}) => {
   return (
     <div>
-      {Object.values(props.articles).map((article) =>
+      {Object.values(articles).map((article) =>
         <Article
           key={article.id}
           article={article}
-          author={props.authors[article.authorId]}
+          lookupAuthor={lookupAuthor}
         />
       )}
     </div>
   );
 };
 
-export default ArticleList;
-
 ArticleList.propTypes = {
-  articles: PropTypes.articles,
-  authors: PropTypes.authors
+  articles: PropTypes.array.isRequired,
+  lookupAuthor: PropTypes.func.isRequired
 };
+
+export default ArticleList;

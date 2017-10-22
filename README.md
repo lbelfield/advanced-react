@@ -66,6 +66,12 @@ yarn add babel-loader (for webpack rules)
 yarn add babel-polyfill (for webpack for es6's asyncFunc())
 
 yarn add --dev jest
+
+yarn add redux
+yarn add react-redux
+yarn add react-router-redux
+yarn add redux-thunk
+yarn add redux-immutable-state-invariant
 ```
 
 ******************************************************************************************************************************
@@ -88,5 +94,6 @@ In package.json, can use imports in Node.js (ES6) because of the babel preset.
 ~/lib/config.js config file with port 8080 
 Hence to start application
 
-`node lib/server.js`
+`yarn webpack`
+`yarn dev`
 Browse to: http://localhost:8080/
